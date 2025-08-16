@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sergioquirogaph</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide-icons@0.292.0"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" id="logo" class="text-xl font-bold tracking-wider nav-link" data-target="inicio">
+                <img src="img/milogo.png" alt="Mi Logo" class="h-20">
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-4">
+                <a href="#" class="nav-link bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors py-2 px-4 rounded-full" data-target="inicio">Inicio</a>
+                <a href="#" class="nav-link bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors py-2 px-4 rounded-full" data-target="sobre-mi">Sobre Mí</a>
+                <a href="#" class="nav-link bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors py-2 px-4 rounded-full" data-target="portafolio">Portafolio</a>
+                <a href="#" class="nav-link bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors py-2 px-4 rounded-full" data-target="galeria-clientes">Galería de Clientes</a>
+                <a href="#" class="nav-link bg-gray-200 text-gray-800 hover:bg-gray-300 transition-colors py-2 px-4 rounded-full" data-target="contacto">Contacto</a>
+            </nav>
+
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+            <nav class="flex flex-col items-center space-y-4 py-4">
+                <a href="#" class="nav-link text-gray-800 hover:text-gray-600 transition-colors" data-target="inicio">Inicio</a>
+                <a href="#" class="nav-link text-gray-800 hover:text-gray-600 transition-colors" data-target="sobre-mi">Sobre Mí</a>
+                <a href="#" class="nav-link text-gray-800 hover:text-gray-600 transition-colors" data-target="portafolio">Portafolio</a>
+                <a href="#" class="nav-link text-gray-800 hover:text-gray-600 transition-colors" data-target="galeria-clientes">Galería de Clientes</a>
+                <a href="#" class="nav-link text-gray-800 hover:text-gray-600 transition-colors" data-target="contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="inicio">
+            <div id="slider-container">
+                <div class="absolute inset-0 bg-black/30"></div>
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center p-4">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 drop-shadow-lg text-stroke">Capturando Momentos, Creando Recuerdos</h1>
+                    <button id="cta-portafolio" class="bg-white text-gray-900 font-semibold py-3 px-8 rounded-full hover:bg-gray-200 transition-all transform hover:scale-105">
+                        Ver Portafolio
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="container mx-auto px-6 py-24 md:py-32">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="w-full h-auto rounded-2xl overflow-hidden shadow-lg">
+                    <img src="img/mifoto.png" alt="Foto del fotógrafo" class="w-full h-full object-cover">
+                </div>
+                <div class="prose max-w-none">
+                    <h2 class="text-3xl font-bold mb-4">Sobre Mí</h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        ¡Hola! Soy Sergio Quiroga, un apasionado fotógrafo con base en Minga Guazú, Alto Paraná. Mi amor por la fotografía comenzó en 2019, y desde entonces he dedicado mi trabajo a capturar momentos que cuentan una historia.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-4">
+                        Inicialmente, me especialicé en sesiones fotográficas y cumpleaños infantiles. Con el tiempo, he expandido mi experiencia para cubrir una amplia gama de eventos, incluyendo graduaciones, bodas, sesiones de fotos en interiores y exteriores, cumpleaños de 15 años y la energía vibrante de partidos de fútbol y otros eventos deportivos.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-4">
+                        Mi estilo se centra en la naturalidad, la emoción y la luz. Busco crear recuerdos que perduren para siempre, entregando imágenes que te permitan revivir ese instante una y otra vez.
+                        ¡Espero tener la oportunidad de conocernos y crear algo increíble juntos!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portafolio" class="py-24 md:py-32 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4">Mi Trabajo</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Explora una selección de mis proyectos. Cada categoría cuenta una historia diferente.</p>
+                <div id="portfolio-filters" class="flex justify-center flex-wrap gap-2 mb-12">
+                    <button class="filter-btn bg-gray-800 text-white py-2 px-4 rounded-full hover:bg-gray-700 transition-colors" data-filter="all">Todos</button>
+                    <button class="filter-btn bg-gray-200 text-gray-800 py-2 px-4 rounded-full hover:bg-gray-300 transition-colors" data-filter="sesiones">Sesiones</button>
+                    <button class="filter-btn bg-gray-200 text-gray-800 py-2 px-4 rounded-full hover:bg-gray-300 transition-colors" data-filter="bodas">Bodas</button>
+                    <button class="filter-btn bg-gray-200 text-gray-800 py-2 px-4 rounded-full hover:bg-gray-300 transition-colors" data-filter="futbol">Fútbol</button>
+                    <button class="filter-btn bg-gray-200 text-gray-800 py-2 px-4 rounded-full hover:bg-gray-300 transition-colors" data-filter="cumpleanos">Cumpleaños</button>
+                </div>
+                <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    </div>
+            </div>
+        </section>
+
+        <section id="galeria-clientes" class="container mx-auto px-6 py-40 md:py-48">
+            <div id="client-login-view">
+                <h2 class="text-3xl font-bold text-center mb-4">Galería de Clientes</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-xl mx-auto">Ingresa el código de tu álbum para ver, descargar y seleccionar tus fotos favoritas.</p>
+                <form id="client-login-form" class="max-w-sm mx-auto">
+                    <input type="text" id="album-code" placeholder="Introduce tu código de álbum" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" required>
+                    <button type="submit" class="w-full bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg mt-4 hover:bg-gray-700 transition-colors">Acceder</button>
+                    <p id="login-error" class="text-red-500 text-center mt-4 hidden">Código de álbum no válido.</p>
+                </form>
+            </div>
+            <div id="client-gallery-view" class="hidden">
+                <div class="flex justify-between items-center mb-8">
+                    <h2 id="gallery-title" class="text-3xl font-bold"></h2>
+                    <button id="logout-btn" class="bg-gray-500 text-white font-semibold py-2 px-4 rounded-full shadow-md hover:bg-gray-700 transition-colors">Salir</button>
+                </div>
+                <div id="gallery-controls" class="mb-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                    <p class="text-blue-800">¡Bienvenido/a! Aquí puedes ver tus fotos. Usa el icono de estrella <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block lucide lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> para marcar tus favoritas. El fotógrafo podrá ver tu selección.</p>
+                    <p id="download-info" class="text-blue-800 mt-2"></p>
+                    <button id="download-all-btn" class="mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-full shadow transition-colors transform hover:scale-105 hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download inline-block mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                        Descargar todo el álbum
+                    </button>
+                </div>
+                <div id="client-photo-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    </div>
+                <div class="mt-12 text-center">
+                    <h3 class="text-2xl font-bold mb-4">Tus Favoritas</h3>
+                    <p id="no-favorites" class="text-gray-500">Aún no has seleccionado ninguna foto como favorita.</p>
+                    <div id="favorites-list" class="flex flex-wrap justify-center gap-4">
+                        </div>
+                    
+                    <div class="mt-6">
+                        <button id="notify-photographer-btn" 
+                                class="hidden bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition-colors disabled:bg-gray-400 disabled:cursor-not-allowed shadow-md transform hover:scale-105">
+                            Finalizar y Notificar al Fotógrafo
+                        </button>
+                        <p id="notification-success" class="text-green-700 mt-4 font-semibold hidden">¡Gracias! El fotógrafo ha sido notificado con tu selección.</p>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-24 md:py-32 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Contáctame</h2>
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Contacto</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin mr-4 text-blue-500"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                <span>Minga Guazú, Paraguay</span>
+                            </div>
+                        </div>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone mr-4 text-blue-500"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                <span>+595 971 261 364</span>
+                            </div>
+                            <div class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail mr-4 text-blue-500"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                <span>sergioquirogaph21@gmail.com</span>
+                            </div>
+                        </div>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d275.5656199644353!2d-54.762078901416984!3d-25.471447452182453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f687007dbcd3dd%3A0x8ddbc995a2f2f09!2sFlia.%20Quiroga%20Britez!5e0!3m2!1ses-419!2spy!4v1755112425593!5m2!1ses-419!2spy" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <h3 class="text-2xl font-semibold mt-12 mb-4">Sígueme</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.instagram.com/sergioquirogaa_/" target="_blank" class="text-gray-500 hover:text-gray-900">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                            </a>
+                            <a href="https://www.facebook.com/share/19gUgiQtYa/?mibextid=wwXIfr" target="_blank" class="text-gray-500 hover:text-gray-900">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                            </a>
+                            <a href="https://wa.me/+595971261364" target="_blank" class="text-gray-500 hover:text-gray-900">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-whatsapp"><path d="M12 2a10 10 0 0 0-8.9 5.1c-.2.4-.3.9-.3 1.4V12c0 5.5 4.5 10 10 10 2.2 0 4.2-.7 5.9-1.9L22 22l-.9-3.7A9.8 9.8 0 0 0 22 12a10 10 0 0 0-10-10zm-2 15l1.6 4.9 3.4-3.4c1.2.7 2.6 1.1 4 1.1h.1a8.4 8.4 0 0 0 8.4-8.4V12a8.4 8.4 0 0 0-8.4-8.4h-.1a8.4 8.4 0 0 0-8.4 8.4V12c0 2.2.8 4.2 2 5.9l-.1.1z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                            <input type="hidden" name="access_key" value="ac3afda5-9910-4121-b355-d7c992c4d312">
+                            <input type="text" name="nombre" placeholder="Nombre" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                            <input type="email" name="email" placeholder="Correo Electrónico" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required>
+                            <textarea name="mensaje" placeholder="Tu mensaje" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500" required></textarea>
+                            <button type="submit" class="w-full bg-gray-800 text-white font-semibold py-3 px-6 rounded-lg hover:bg-gray-700 transition-colors">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>© 2025 sergioquirogaph. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-blue-500"></div>
+        <p class="mt-4 text-xl font-medium text-gray-700">Preparando tu álbum, por favor espera...</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
